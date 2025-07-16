@@ -2,10 +2,10 @@ import os
 import logging
 import pickle
 
-from PyPDF import PdfReader
+from PyPDF2 import PdfReader
 from langchain.chains.question_answering import load_qa_chain
-from langchain.openai import OpenAI, ChatOpenAI
-from langchain.openai import OpenAIEmbeddings
+from langchain_openai import OpenAI, ChatOpenAI
+from langchain_openai import OpenAIEmbeddings
 from langchain_community.embeddings import DashScopeEmbeddings
 from langchain_community.callbacks.manager import get_openai_callback
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -30,9 +30,9 @@ def extract_text_with_page_numbers(pdf) -> Tuple[str, List[int]]:
         extracted_text = page.extract_text()
         if extracted_text:
             text += extracted_text
-            page_numbers.extend([page_number] * len(extracted_text.split("\n")))
+            page_numbers.extend([page_number] * len(extracted_text.split("/n")))
         else:
-            logging.warning(f"Empty Page {i} or unable to extract text.")
+            logging.warning(f"Empty Page or unable to extract text.")
 
     return text, page_numbers
 
@@ -52,8 +52,8 @@ def process_text_with_splitter(text: str, page_numbers: List[int], save_path: st
     text_splitter = RecursiveCharacterTextSplitter(
         chunk_size=512,
         chunk_overlap=128,
-        length_function=len
-        separators = ["\n\n", "\n", ".", " ", ""],
+        length_function=len,
+        separators = ["/n/n", "/n", ".", " ", ""],
     )
 
     # Split the text into chunks
@@ -130,12 +130,12 @@ def load_vector_store(load_path: str, embeddings = None) -> FAISS:
 
 
 # Usage example
-pdf_path = "./ReConsciousTy/tests/00_RAG_practice/RAGpack/example.pdf"
+pdf_path = "C:/Users/14545/Desktop/001_project/ReConsciousTy/tests/00_RAG_practice/RAGpack/example.pdf"
 save_dir = "./vector_database"
 
 reader = PdfReader(pdf_path)
 
-text, page_numbers = extract_text_with_page_numbers(pdf_path)
+text, page_numbers = extract_text_with_page_numbers(reader)
 logging.info(f"Extracted text: {len(text)} characters, {len(page_numbers)} page numbers.")
 print(f"Extracted text: {len(text)} characters, {len(page_numbers)} page numbers.")
 
