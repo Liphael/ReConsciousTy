@@ -1,2 +1,8 @@
 # 排除bkp文件
 *.bkp
+# 排除日志文件
+*.log
+# 排除临时文件
+__pycache__/
+# 排除测试输出文件
+testoutput/
