@@ -6,3 +6,8 @@
 __pycache__/
 # 排除测试输出文件
 testoutput/
+
+.vs
+x64
+
+Debug
