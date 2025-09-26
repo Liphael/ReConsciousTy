@@ -53,7 +53,10 @@ the cache reflesh will ask for old file removing permission, permit is ok.
 
 this code is typically made for usage in china. because of chinese national firewall filteration of harmful contents, legal contents should be obtained from main official mirror sites, if you dont want to use any VPN tech.
 
-1. 
+this code:
+
+1. adding mirrors
+2. config url showing when start downloading
 
 ```shell
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
@@ -148,7 +151,7 @@ source ~/miniconda3/bin/activate
 conda init --all
 ```
 
-**现在，Conda已经安装完毕。然后我们配置源代码**
+***现在，Conda已经安装完毕。然后我们配置源代码***
 
 在shell中运行以下代码，将中文源图像url添加到基本配置中。
 
@@ -156,7 +159,10 @@ conda init --all
 
 此代码通常在中国使用。由于中国国家防火墙过滤有害内容，如果你不想使用任何VPN技术，应该从主要的官方镜像网站获取合法内容。
 
-1. 
+此代码：
+
+1. 添加数个镜像源到配置文件
+2. 设置在开始下载时显示所用源
 
 ```shell
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
