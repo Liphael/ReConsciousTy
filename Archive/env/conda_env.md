@@ -117,7 +117,7 @@ trusted-host = pypi.tuna.tsinghua.edu.cn
 
 ### 安装 && 配置Conda
 
-运行以下四个命令，下载并安装所选芯片架构的最新Linux安装程序。
+运行以下四个命令，下载并安装所选芯片架构支持的最新Linux安装程序。
 
 这些命令逐行的功能分别是：
 
