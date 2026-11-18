@@ -1,0 +1,4 @@
+/.vscode/               export-ignore
+/Archive/               export-ignore
+/tests/                 exprot-ignore
+markdownlint.json       export-ignore

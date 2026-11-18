@@ -146,7 +146,6 @@ def gpt(token_id, pos_id, keys, values):
 def loss_function
 
 
-
 # Let there be Adam, the blessed optimizer and its buffers
 learning_rate, beta1, beta2, eps_adam = 0.01, 0.85, 0.99, 1e-8
 m = [0.0] * len(params) # first moment buffer
