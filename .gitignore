@@ -12,6 +12,7 @@ __pycache__/
 testoutput/
 
 .dsh/
+Archive/reference/
 localtests/
 .vscode/
 tests/
