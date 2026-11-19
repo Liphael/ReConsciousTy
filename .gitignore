@@ -16,3 +16,11 @@ reference/
 localtests/
 .vscode/
 tests/
+
+# Local reference PDFs
+/Archive/SelfLearnNotes/ref/编译原理 第二版 (Alfred V. Aho,Monica S.Lam, Ravi Sethi etc.) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+/Archive/SelfLearnNotes/ref/计算理论导引 原书第3版 (迈克尔·西普塞 (Michael Sipser)) (z-library.sk, 1lib.sk, z-lib.sk).pdf
+/Archive/SelfLearnNotes/数学工作者必知的范畴学/数学工作者必知的范畴学 第2版 (M.Lang, ( )Saunders Mac Lane著, Ne La etc.) (z-library.sk, 1lib.sk, z-lib.sk)-001-100.pdf
+/Archive/SelfLearnNotes/数学工作者必知的范畴学/数学工作者必知的范畴学 第2版 (M.Lang, ( )Saunders Mac Lane著, Ne La etc.) (z-library.sk, 1lib.sk, z-lib.sk)-101-200.pdf
+/Archive/SelfLearnNotes/数学工作者必知的范畴学/数学工作者必知的范畴学 第2版 (M.Lang, ( )Saunders Mac Lane著, Ne La etc.) (z-library.sk, 1lib.sk, z-lib.sk)-201-300.pdf
+/Archive/SelfLearnNotes/数学工作者必知的范畴学/数学工作者必知的范畴学 第2版 (M.Lang, ( )Saunders Mac Lane著, Ne La etc.) (z-library.sk, 1lib.sk, z-lib.sk)-301-328.pdf
